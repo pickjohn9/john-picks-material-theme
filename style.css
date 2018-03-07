@@ -16,6 +16,9 @@
     MAIN
 \*------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+
+
 /* global box-sizing */
 *,
 *:after,
@@ -31,7 +34,7 @@ html {
 	font-size:62.5%;
 }
 body {
-	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font:300 11px/1.4;
 	color:#444;
 }
 /* clear */
@@ -95,6 +98,11 @@ main {
 	margin:0 auto;
 	position:relative;
 }
+
+main p {
+	font-size: 15px;
+}
+
 /* logo */
 .logo {
 
@@ -108,11 +116,23 @@ nav ul li a {
     font-size: 1.2em;
 }
 /* sidebar */
+
+.blog-sidebar .sidebar {
+    padding: 30px 10px;
+}
+
 .sidebar {
 
 }
+
+
+
+
 /* footer */
 .page-footer {
+    font-size: 13px;
+    padding: 2px 0 1px 0;
+
 }
 
 /*------------------------------------*\
@@ -140,6 +160,18 @@ nav ul li a {
 		url('fonts/font-name.svg#font-name') format('svg');
     font-weight:normal;
     font-style:normal;
+}
+
+.page-title {
+    color: #29b6f6;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h2 a {
+    color: #f57c02;
 }
 
 /*------------------------------------*\
@@ -321,3 +353,32 @@ a img.aligncenter {
     HOME PAGE TEMPLATE
 \*------------------------------------*/
 
+/*Slideshow Styling*/
+.slide-title {
+    font-family: 'Bad Script', cursive;
+    color: #fff;
+    padding-bottom: 19px;
+    font-size: 52px;
+  }
+
+.carousel.carousel-slider .carousel-item p {
+  	 color: #fff;
+   	 font-size: 18px;
+
+  }
+
+  .pagination {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+a {
+	color: #f57c02;
+	transition: 0.8s;
+}
+
+#page-content {
+    padding: 10px 35px;
+    margin-top: 40px;
+}

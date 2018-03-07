@@ -3,9 +3,10 @@
 
 				<!-- copyright -->
 				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'john-picks-material-theme'); ?>
-					<a href="//wordpress.org" class="orange-text text-lighten-3" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com"  class="orange-text text-lighten-3" title="HTML5 Blank">HTML5 Blank</a>.
+					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Website Designed & Created by', 'john-picks-material-theme'); ?>
+					<a href="http://JohnMPick.com" class="orange-text text-lighten-3" title="WordPress">John Pick</a>.
 				</p>
+				
 				<!-- /copyright -->
 
 			</footer>

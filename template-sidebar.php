@@ -1,3 +1,4 @@
+	<?php /* Template Name: Page with Right Sidebar*/  ?>
 <?php get_header(); ?>
 
 
@@ -5,8 +6,8 @@
 	<main role="main">
 		<!-- section -->
 		
-		<div class="row">
-			<div id="page-content" class="card">
+		<div  id="page-content" class="row">
+			<div class="card col s8">
 			<section>
 
 				<h1 class="page-title"><?php the_title(); ?></h1>
@@ -47,7 +48,11 @@
 			</section>
 			<!-- /section -->
 		</div>
+		<div class="col s4 card">
+		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Interior Page Sidebar") ) : ?>
+		<?php endif;?>		</div>
 	</div>
 	</main>
+
 
 <?php get_footer(); ?>

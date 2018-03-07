@@ -35,18 +35,13 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 
-					<!-- logo -->
-					<div class="logo">
-
-					</div>
-					<!-- /logo -->
 
 					<!-- nav -->
 					<nav class="nav light-blue lighten-1" role="navigation">
 						<div class="nav-wrapper container">
 
 							<a href="<?php echo home_url(); ?>" id="logo-container" class="brand-logo">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
+								<img style="margin-bottom: 5px;" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
 							</a>
 
 							<?php primary_nav(); ?>

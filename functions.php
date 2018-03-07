@@ -362,7 +362,6 @@ function html5blankcomments($comment, $args, $depth)
 	<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
 	<?php endif; ?>
 	<div class="comment-author vcard">
-	<?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['180'] ); ?>
 	<?php printf(__('<cite class="fn">%s</cite> <span class="says">says:</span>'), get_comment_author_link()) ?>
 	</div>
 <?php if ($comment->comment_approved == '0') : ?>
@@ -439,7 +438,7 @@ add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
 // Shortcodes
-add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
+// add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
 add_shortcode('md_button', 'md_button'); // Can place [md_button] in Pages, Posts now.
 
 // Shortcodes above would be nested like this -
@@ -527,10 +526,10 @@ function create_post_type_html5()
 \*------------------------------------*/
 
 // Shortcode Demo with Nested Capability
-function html5_shortcode_demo($atts, $content = null)
-{
-    return '<div class="shortcode-demo">' . do_shortcode($content) . '</div>'; // do_shortcode allows for nested Shortcodes
-}
+// function html5_shortcode_demo($atts, $content = null)
+// {
+//     return '<div class="shortcode-demo">' . do_shortcode($content) . '</div>'; // do_shortcode allows for nested Shortcodes
+// }
 
 // Shortcode created for building Material Design Buttons
 function md_button($params = array(), $content = null) {
@@ -586,7 +585,21 @@ if ( function_exists('register_sidebar') )
 );
 
 
+if ( function_exists('register_sidebar') )
+  register_sidebar(array(
+    'name' => 'Interior Page Sidebar',
+     'id' => 'interioir-page-sidebar',
+    'before_widget' => '<div class = "int-sidebar">',
+    'after_widget' => '</div>',
+    'before_title' => '<h3 class="light-blue-text">',
+    'after_title' => '</h3>',
+  )
+);
+
+
+
 
 
 ?>
+
 

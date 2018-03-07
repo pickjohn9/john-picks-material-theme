@@ -33,18 +33,18 @@
 
 			<!-- 3 Column Widgets -->
 		      <div class="row">
-		        <div class="col s12 m4 center">
+		        <div class="col s12 m4 card center">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Home Widget 1") ) : ?>
 					<?php endif;?>
 		          </div>
 
 
-		        <div class="col s12 m4 center">
+		        <div class="col s12 m4 card center">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Home Widget 2") ) : ?>
 					<?php endif;?>
 		        </div>
 
-		        <div class="col s12 m4 center">
+		        <div class="col s12 m4 card center">
 					<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Home Widget 3") ) : ?>
 					<?php endif;?>					
 		        </div>
